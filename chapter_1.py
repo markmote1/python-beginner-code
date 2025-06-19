@@ -14,13 +14,23 @@
 print("mark mote")
 
 # list/array- contain elements of different data types
+
 #uses zero-based indexing-meaning the first element is at index 0
-[1, 2, 3, "mark", "mote", True, [1, 2, 3]]
+shopping_list = [
+    'milk',
+    'eggs',
+    'bread',
+    1,
+    []
+]
 
 
 #object / dictionary- contain key-value/definition pairs
 
-{ "name" : "mark", "age" : 23, "job" : "developer" }
+person = { 
+    "name" : "mark", 
+    "age" : 23, 
+    "job" : "developer" }
 
 #boolean- true or false-big part of programming is about logic
 
@@ -33,6 +43,20 @@ None
 
 #2.0 Variables - a variable is a label for some data in your program
 
+#rules
+
 #-variables cannot start with a number
-#-variables can only contain letters, numbers, and underscores
+#-variables can only contain letters, numbers, and underscores-no spaces
 #-variables are case-sensitive
+
+number_of_cats = 3 #using snake case-words separated by underscores
+
+my_name = "mark"
+
+
+print( number_of_cats * 2)
+
+#uses of variables
+#-to store data/values
+#-to refer to data later in your program and access the values associated with it
+#-to make your code more readable
