@@ -24,7 +24,6 @@ shopping_list = [
     []
 ]
 
-
 #object / dictionary- contain key-value/definition pairs
 
 person = { 
@@ -41,7 +40,7 @@ False
 
 None
 
-#2.0 Variables - a variable is a label for some data in your program
+#2.0 VARIABLES - a variable is a label for some data in your program
 
 #rules
 
@@ -62,7 +61,7 @@ print( number_of_cats * 2)
 #-to make your code more readable
 
 
-#3.0 Logic and Operations- operators and functions
+#3.0 LOGIC AND OPERATIONS- operators and functions
 
 #if block - if condition is true execute this code else skip it
 
@@ -90,7 +89,7 @@ else:
 #    if number_of_cats < 20:
 #        print('Yeah, We also have less than 20 cats so the cats no is between 3 - 20')
 
-# This above we can use the and operator
+# This above we can use the 'and' operator
 
 if number_of_cats > 3 and number_of_cats < 20:
     print('we have more than 4 cats so the cats no is between 3 - 20')
@@ -131,13 +130,30 @@ x != y #true - because x is not equal to y
 if not number_of_cats == 2:
     print(f'number of cats is not 2 but instead: {number_of_cats}', )
 
-
 # Loops- while loops and for loops
-
 
 # -while loop-while this condition is true, keep running this code
 count = 0
-
-
 while count < number_of_cats:
-    print('Hello world')
+    print( 'Hello world')
+    count = count + 2
+    if count == 3:
+        break
+
+
+
+# -for loop-for each item in this list, do this code
+for x in shopping_list:
+    print(x)
+
+
+for i in range(10):
+    print(i)
+
+length_of_my_array = len(shopping_list)
+for j in range(length_of_my_array):
+    current_index = j 
+    current_value = shopping_list[j]
+    print(f'The current index is: {current_index} and the value at that index in the list/array is {current_value}')
+
+
