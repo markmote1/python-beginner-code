@@ -28,7 +28,7 @@ shopping_list = [
 #object / dictionary- contain key-value/definition pairs
 
 person = { 
-    "name" : "mark", 
+   # "name" : "mark", 
     "age" : 23, 
     "job" : "developer" }
 
@@ -60,3 +60,84 @@ print( number_of_cats * 2)
 #-to store data/values
 #-to refer to data later in your program and access the values associated with it
 #-to make your code more readable
+
+
+#3.0 Logic and Operations- operators and functions
+
+#if block - if condition is true execute this code else skip it
+
+if number_of_cats > 2:
+    print("too many cats")
+
+print ('We passed the if block')
+
+if 'name' in person:
+    print(person['name'])
+else:
+    print("no name")
+
+
+if 'milk' in shopping_list:
+    print('Need to buy milk')
+else:
+    print('No need to buy milk')
+
+
+#Logical operators --- and, or
+
+#if number_of_cats >3:
+#    print('we have more than 3 cats')
+#    if number_of_cats < 20:
+#        print('Yeah, We also have less than 20 cats so the cats no is between 3 - 20')
+
+# This above we can use the and operator
+
+if number_of_cats > 3 and number_of_cats < 20:
+    print('we have more than 4 cats so the cats no is between 3 - 20')
+
+
+if number_of_cats < 5 or number_of_cats >= 20:
+    print('Number of cats is outside the range of 4-20')
+
+# Operators
+
+# -Arithmetic operators
+# -Assignment operators
+# -Comparison operators
+# -Logical operators
+
+x = 3
+y = 4
+print(x * y + x - y / x)
+
+# remainder operator % - it calculates the remainder of a division
+
+remainder = y % x
+print(remainder, 10 % 3)
+
+# equality operator == - it checks if two values are equal
+
+print(3 == 3) #true
+
+x == y #false - because x is not equal to y
+
+# not equality operator != - it checks if two values are not equal
+
+print(3 != 3) #false
+
+x != y #true - because x is not equal to y
+
+#same as above
+if not number_of_cats == 2:
+    print(f'number of cats is not 2 but instead: {number_of_cats}', )
+
+
+# Loops- while loops and for loops
+
+
+# -while loop-while this condition is true, keep running this code
+count = 0
+
+
+while count < number_of_cats:
+    print('Hello world')
