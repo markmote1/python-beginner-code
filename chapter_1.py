@@ -190,13 +190,21 @@ print(product)
 # - classes are always capitalized
 
 class Person:
-    def jello_two(): #function defined inside a class is called a method
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def jello_two(self): #function defined inside a class is called a method
+       #methods always have one default argument called self- it must be there as the first argument, it refers to the original entity in this case self refers to the new_person object because thats where its initiated
         print("jello jello")
 
 
 #instantiating a new class
 # what this will do is it will create a new object called new_person
 # this new_person will look out te template for the person object above and it will create a new object and assign it to the new_person 
-new_person = Person()
+new_person = Person('john', 28)
 
 (new_person.jello_two())
+print(new_person.name)
+
+
+new_new_person = Person('Lucy', 54)
