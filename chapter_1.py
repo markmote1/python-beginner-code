@@ -25,11 +25,16 @@ shopping_list = [
 ]
 
 #object / dictionary- contain key-value/definition pairs
+def jello():
+    print("jello")
 
 person = { 
    # "name" : "mark", 
     "age" : 23, 
-    "job" : "developer" }
+    "job" : "developer",
+     "action" : jello
+       }
+    
 
 #boolean- true or false-big part of programming is about logic
 
@@ -157,3 +162,41 @@ for j in range(length_of_my_array):
     print(f'The current index is: {current_index} and the value at that index in the list/array is {current_value}')
 
 
+# 4.0 FUNCTIONS - a function is a block of code that performs a specific task
+
+#defining a function
+def print_kenyan_word(kenyan_word):
+    '''
+    this function takes an argument called kenyan_word and prints out the word provided as an argument,
+    in addition to the word rada
+    '''
+    return
+    print('rada &', kenyan_word)
+
+#later on in the program we can call the function/invoke the function
+
+for k in range(3):
+    print_kenyan_word('zoza')
+
+def multiply_two_numbers(input1, input2):
+    return input1 * input2
+
+product = multiply_two_numbers(8, 7)
+print(product)
+
+#classes
+# - a class is a blueprint/template for creating objects
+# - an object is an instance of a class
+# - classes are always capitalized
+
+class Person:
+    def jello_two(): #function defined inside a class is called a method
+        print("jello jello")
+
+
+#instantiating a new class
+# what this will do is it will create a new object called new_person
+# this new_person will look out te template for the person object above and it will create a new object and assign it to the new_person 
+new_person = Person()
+
+(new_person.jello_two())
