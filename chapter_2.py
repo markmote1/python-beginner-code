@@ -1,5 +1,5 @@
 
-''' 1. Take definitions.json, read it in as our data, and use a spaced repetition algorithm 
+''' 1.0 Take definitions.json, read it in as our data, and use a spaced repetition algorithm 
 to create a long list where each word is encoutered less and less often, thus increasing the spacing
 between encounters as we strengthen our knowledge of the word.'''
 
@@ -7,9 +7,6 @@ between encounters as we strengthen our knowledge of the word.'''
 
 import json # Importing the json module to read JSON files-it will read the definitions file
 import csv #  reading and writing CSV files
-
-
-
 
 '''# 1.1 is to read the definitions file and process it
 
