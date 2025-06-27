@@ -8,7 +8,14 @@ between encounters as we strengthen our knowledge of the word.'''
 import json # Importing the json module to read JSON files-it will read the definitions file
 import csv #  reading and writing CSV files
 
-'''# 1.1 is to read the definitions file and process it
+# 1.1 is to read the definitions file and process it
+def load_vocab_from_json(file_path):
+    ''' Load data from a json file'''
+    with open(file_path, 'r') as f:
+        data = json.load(f)  # Load the JSON data from the file
+
+'''
+
 
 # 1.2 create a complex object that keeps track of a whole lot of properties about the word or attribute
  / therefore we need to define a class for this object
